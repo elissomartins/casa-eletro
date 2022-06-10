@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#forma-pagamento {
+    color: red;
+}
+
+.menu a {
+    color: white;
+}
+
+.nome-item {
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.valor-novo {
+    color: red;
+    font-size: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/*
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+*/
+
