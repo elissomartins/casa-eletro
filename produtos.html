@@ -1,127 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos - Casa Eletro</title>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
-<body>
-     <!-- Início do Menu -->
-     <table width="100%" bgcolor="red" class="menu">
-        <tr>
-            <td align="center" width="25%"><a href="index.html"><img width="100px" src="./imagens/logo_casaeletro.png" alt="Página Inicial"></a></td>
-            <td align="center" width="25%"><a href="produtos.html">Produtos</a></td>
-            <td align="center" width="25%"><a href="loja.html">Nossas Lojas</a></td>
-            <td align="center" width="25%"><a href="contato.html">Contato</a></td>
-        </tr>
-    </table>
-    <!-- Fim do Menu -->
 
-    <h2>Produtos</h2>
+<body>
+
+    <nav class="menu">
+        <a href="index.html"><img width="100px" src="./imagens/logo.png" alt="Página Inicial"></a>
+        <a href="produtos.html">Produtos</a>
+        <a href="loja.html">Nossas Lojas</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <header>
+        <h2>Produtos</h2>
+    </header>
     <hr>
 
-    <table border="0" width="0">
-        <tr>
-            <td rowspan="5" width="20%" valign="top">
-                <h3>Categorias</h3>
-                <ul>
-                    <li>Geladeira (2)</li>
-                    <li>Fogão (2)</li>
-                    <li>Microondas (2)</li>
-                    <li>Lavadoura de Roupas (2)</li>
-                    <li>Lava-louças (2)</li>
-                </ul>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
-                <p class="nome-item">Geladeira Eletrolux</p>
-                <hr>
-                <p class="nome-item"><strike>Valor antigo</strike></p>
-                <p class="valor-novo">Novo Valor</p><br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./imagens/Produtos/geladeira_brastemp.jpeg" width="200px">
-                <p class="nome-item">Geladeira Brastemp</p>
-                <hr>
-                <p class="nome-item"><strike>Valor antigo</strike></p>
-                <p class="valor-novo">Novo Valor</p><br>
-            </td>    
+    <section class="categorias">
+            <h3>Categorias</h3>
+            <ul>
+                <li>Geladeira (2)</li>
+                <li>Fogão (2)</li>
+                <li>Microondas (2)</li>
+                <li>Lavadoura de Roupas (2)</li>
+                <li>Lava-louças (2)</li>
+            </ul>
+    </section>
 
-            <td width="20%" align="center" valign="bottom">
-                <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
-                <p class="nome-item">Fogão 1</p>
-                <hr>
-                <p class="nome-item"><strike>Valor antigo</strike></p>
-                <p class="valor-novo">Novo Valor</p><br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
-                <p class="nome-item">Fogão 2</p>
-                <hr>
-                <p class="nome-item"><strike>Valor antigo</strike></p>
-                <p class="valor-novo">Novo Valor</p><br>
-            </td>
-        </tr>
-        <tr>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
-                <p class="nome-item">Microondas 1</p>
-                <hr>
-                <p class="nome-item"><strike>Valor antigo</strike></p>
-                <p class="valor-novo">Novo Valor</p><br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
-                <p class="nome-item">Microondas 2</p>
-                <hr>
-                <p class="nome-item"><strike>Valor antigo</strike></p>
-                <p class="valor-novo">Novo Valor</p><br>
-            </td>
-        </td>
+    <section class="produtos">
+        <div class="box-produto">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+            <br>
+            <p class="descricao">Geladeira Eletrolux</p>
+            <hr>
+            <p class="descricao"><strike>Valor antigo</strike></p>
+            <p class="preco">Novo Valor</p><br>
+        </div>
 
-            <td width="20%" align="center" valign="bottom">
-                <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
-                <p class="nome-item">Lavadoura de Roupas 1</p>
-                <hr>
-                <p class="nome-item"><strike>Valor antigo</strike></p>
-                <p class="valor-novo">Novo Valor</p><br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
-                <p class="nome-item">Lavadoura de Roupas 2</p>
-                <hr>
-                <p class="nome-item"><strike>Valor antigo</strike></p>
-                <p class="valor-novo">Novo Valor</p><br>
-            </td>
-        </tr>
-        <tr>        
-            <td width="20%" align="center" valign="bottom">
-                <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
-                <p class="nome-item">Lava-louças 1</p>
-                <hr>
-                <p class="nome-item"><strike>Valor antigo</strike></p>
-                <p class="valor-novo">Novo Valor</p><br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
-                <p class="nome-item">Lava-louças 1</p>
-                <hr>
-                <p class="nome-item"><strike>Valor antigo</strike></p>
-                <p class="valor-novo">Novo Valor</p><br>
-            </td>
-        </tr>
-    </table>
+        <div class="box-produto">
+            <img src="./imagens/Produtos/geladeira_brastemp.jpeg" width="200px">
+            <br>
+            <p class="descricao">Geladeira Brastemp</p>
+            <hr>
+            <p class="descricao"><strike>Valor antigo</strike></p>
+            <p class="preco">Novo Valor</p><br>
+        </div>
+
+        <div class="box-produto">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+            <br>
+            <p class="descricao">Fogão 1</p>
+            <hr>
+            <p class="descricao"><strike>Valor antigo</strike></p>
+            <p class="preco">Novo Valor</p><br>
+        </div>
+
+        <div class="box-produto">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+            <br>
+            <p class="descricao">Fogão 2</p>
+            <hr>
+            <p class="descricao"><strike>Valor antigo</strike></p>
+            <p class="preco">Novo Valor</p><br>
+        </div>
+
+        <div class="box-produto">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+            <br>
+            <p class="descricao">Microondas 1</p>
+            <hr>
+            <p class="descricao"><strike>Valor antigo</strike></p>
+            <p class="preco">Novo Valor</p><br>
+        </div>
+
+        <div class="box-produto">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+            <br>
+            <p class="descricao">Microondas 2</p>
+            <hr>
+            <p class="descricao"><strike>Valor antigo</strike></p>
+            <p class="preco">Novo Valor</p><br>
+        </div>
+
+        <div class="box-produto">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+            <br>
+            <p class="descricao">Lavadoura de Roupas 1</p>
+            <hr>
+            <p class="descricao"><strike>Valor antigo</strike></p>
+            <p class="preco">Novo Valor</p><br>
+        </div>
+
+        <div class="box-produto">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+            <br>
+            <p class="descricao">Lavadoura de Roupas 2</p>
+            <hr>
+            <p class="descricao"><strike>Valor antigo</strike></p>
+            <p class="preco">Novo Valor</p><br>
+        </div>
+
+        <div class="box-produto">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+            <br>
+            <p class="descricao">Lava-louças 1</p>
+            <hr>
+            <p class="descricao"><strike>Valor antigo</strike></p>
+            <p class="preco">Novo Valor</p><br>
+        </div>
+
+        <div class="box-produto">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+            <br>
+            <p class="descricao">Lava-louças 1</p>
+            <hr>
+            <p class="descricao"><strike>Valor antigo</strike></p>
+            <p class="preco">Novo Valor</p><br>
+        </div>
+    </section>
+
 
     <br><br><br><br><br><br><br><br><br><br>
 
-    <center>
-        <span>
-            <p id="forma-pagamento">Formas de Pagamento</p>
-            <img width="300px" src="./imagens/logo_pagamento.jpg" alt="Formas de Pagamento">
-        </span>
-    </center>
-    <center>
-        <font face="arial" size=2>&copy; Casa Eletro</p>
-    </center>
+    <footer id="rodape">
+        <p id="forma-pagamento">Formas de Pagamento</p>
+        <img width="300px" src="./imagens/logo_pagamento.jpg" alt="Formas de Pagamento">
+        <p>&copy; Casa Eletro</p>
+    </footer>
+
 </body>
+
 </html>
