@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos - Casa Eletro</title>
     <link rel="stylesheet" href="./css/estilo.css">
+    <script src="js/funcoes.js"></script>
 </head>
 
 <body>
@@ -23,20 +23,21 @@
     </header>
     <hr>
 
-    <section class="categorias">
-            <h3>Categorias</h3>
-            <ul>
-                <li>Geladeira (2)</li>
-                <li>Fogão (2)</li>
-                <li>Microondas (2)</li>
-                <li>Lavadoura de Roupas (2)</li>
-                <li>Lava-louças (2)</li>
-            </ul>
-    </section>
+    <div class="categorias">
+    <h3>Categorias</h3>
+    <ul>
+        <li onclick="exibir_todos()">Todos (12)</li>
+        <li onclick="exibir_categoria('geladeira')">Geladeiras (3)</li>
+        <li onclick="exibir_categoria('fogao')">Fogões (3)</li>
+        <li onclick="exibir_categoria('microondas')">Microondas (2)</li>
+        <li onclick="exibir_categoria('lavaroupa')">Lavadoura de Roupas (2)</li>
+        <li onclick="exibir_categoria('lavalouca')">Lava-louças (2)</li>
+    </ul>
+    </div>
 
     <section class="produtos">
-        <div class="box-produto">
-            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+        <div class="box-produto" id="geladeira" style="display:block;">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px" onclick="destaque(this)" onclick="destaque(this)">
             <br>
             <p class="descricao">Geladeira Eletrolux</p>
             <hr>
@@ -44,8 +45,8 @@
             <p class="preco">Novo Valor</p><br>
         </div>
 
-        <div class="box-produto">
-            <img src="./imagens/Produtos/geladeira_brastemp.jpeg" width="200px">
+        <div class="box-produto" id="geladeira" style="display:block;">
+            <img src="./imagens/Produtos/geladeira_brastemp.jpeg" width="200px" onclick="destaque(this)">
             <br>
             <p class="descricao">Geladeira Brastemp</p>
             <hr>
@@ -53,8 +54,17 @@
             <p class="preco">Novo Valor</p><br>
         </div>
 
-        <div class="box-produto">
-            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+        <div class="box-produto" id="geladeira" style="display:block;">
+            <img src="./imagens/Produtos/geladeira_brastemp.jpeg" width="200px" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Geladeira 3</p>
+            <hr>
+            <p class="descricao"><strike>Valor antigo</strike></p>
+            <p class="preco">Novo Valor</p><br>
+        </div>
+
+        <div class="box-produto" id="fogao" style="display:block;">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px" onclick="destaque(this)">
             <br>
             <p class="descricao">Fogão 1</p>
             <hr>
@@ -62,8 +72,8 @@
             <p class="preco">Novo Valor</p><br>
         </div>
 
-        <div class="box-produto">
-            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+        <div class="box-produto" id="fogao" style="display:block;">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px" onclick="destaque(this)">
             <br>
             <p class="descricao">Fogão 2</p>
             <hr>
@@ -71,8 +81,17 @@
             <p class="preco">Novo Valor</p><br>
         </div>
 
-        <div class="box-produto">
-            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+        <div class="box-produto" id="fogao" style="display:block;">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Fogão 3</p>
+            <hr>
+            <p class="descricao"><strike>Valor antigo</strike></p>
+            <p class="preco">Novo Valor</p><br>
+        </div>
+
+        <div class="box-produto" id="microondas" style="display:block;">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px" onclick="destaque(this)">
             <br>
             <p class="descricao">Microondas 1</p>
             <hr>
@@ -80,8 +99,8 @@
             <p class="preco">Novo Valor</p><br>
         </div>
 
-        <div class="box-produto">
-            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+        <div class="box-produto" id="microondas" style="display:block;">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px" onclick="destaque(this)">
             <br>
             <p class="descricao">Microondas 2</p>
             <hr>
@@ -89,8 +108,8 @@
             <p class="preco">Novo Valor</p><br>
         </div>
 
-        <div class="box-produto">
-            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+        <div class="box-produto" id="lavaroupa" style="display:block;">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px" onclick="destaque(this)">
             <br>
             <p class="descricao">Lavadoura de Roupas 1</p>
             <hr>
@@ -98,8 +117,8 @@
             <p class="preco">Novo Valor</p><br>
         </div>
 
-        <div class="box-produto">
-            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+        <div class="box-produto" id="lavaroupa" style="display:block;">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px" onclick="destaque(this)">
             <br>
             <p class="descricao">Lavadoura de Roupas 2</p>
             <hr>
@@ -107,8 +126,8 @@
             <p class="preco">Novo Valor</p><br>
         </div>
 
-        <div class="box-produto">
-            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+        <div class="box-produto" id="lavalouca" style="display:block;">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px" onclick="destaque(this)">
             <br>
             <p class="descricao">Lava-louças 1</p>
             <hr>
@@ -116,14 +135,15 @@
             <p class="preco">Novo Valor</p><br>
         </div>
 
-        <div class="box-produto">
-            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px">
+        <div class="box-produto" id="lavalouca" style="display:block;">
+            <img src="./imagens/Produtos/geladeira_eletrolux.jpeg" width="200px" onclick="destaque(this)">
             <br>
-            <p class="descricao">Lava-louças 1</p>
+            <p class="descricao">Lava-louças 2</p>
             <hr>
             <p class="descricao"><strike>Valor antigo</strike></p>
             <p class="preco">Novo Valor</p><br>
         </div>
+
     </section>
 
 
